@@ -2,7 +2,8 @@
 
 set -e
 
-GCC_VERSION=$(curl -s https://ftp.gnu.org/gnu/gcc/ | grep -oP 'gcc-\K[0-9]+\.[0-9]+\.[0-9]+' | sort -V | tail -n 1)
+#GCC_VERSION=$(curl -s https://ftp.gnu.org/gnu/gcc/ | grep -oP 'gcc-\K[0-9]+\.[0-9]+\.[0-9]+' | sort -V | tail -n 1)
+GCC_VERSION="5.5.0"
 GCC_URL="https://ftp.gnu.org/gnu/gcc/gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.gz"
 INSTALL_DIR="/usr/local"
 
