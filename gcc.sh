@@ -7,7 +7,8 @@ GCC_URL="https://ftp.gnu.org/gnu/gcc/gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.gz"
 INSTALL_DIR="/usr/local"
 
 sudo yum groupinstall -y "Development Tools"
-sudo yum install -y gmp gmp-devel mpfr mpfr-devel libmpc libmpc-devel wget curl
+sudo yum install -y gmp gmp-devel mpfr mpfr-devel libmpc libmpc-devel wget curl bison flex texinfo
+
 
 cd /usr/local/src
 wget $GCC_URL
