@@ -13,7 +13,10 @@ DOWNLOAD_URL="https://cdn.kernel.org/pub/linux/kernel/v${MAJOR_VERSION}.x/linux-
 wget $DOWNLOAD_URL
 
 if [ $? -eq 0 ]; then
-    echo "Kernel downloaded: linux-$LATEST_KERNEL.tar.xz"
+    echo "Kernel downloaded: linux-$LATEST_KERNEL"
 else
     echo "Download failed."
 fi
+
+tar -xvf linux-$LATEST_KERNEL.tar.xz
+rm -rf linux-$LATEST_KERNEL.tar.xz
