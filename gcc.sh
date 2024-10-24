@@ -22,7 +22,7 @@ mkdir build
 cd build
 
 ../configure --enable-languages=c,c++ --disable-multilib --prefix=$INSTALL_DIR
-make -j$(nproc)
+make
 sudo make install
 
 sudo ldconfig
