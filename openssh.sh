@@ -15,7 +15,7 @@ wget $OPENSSH_URL
 tar -xzf $OPENSSH_VERSION.tar.gz
 cd openssh-portable-$OPENSSH_VERSION
 
-./configure --prefix=$INSTALL_DIR
+./configure --prefix=$INSTALL_DIR --with-ssl-dir=/usr/local
 make -j$(nproc)
 sudo make install
 
