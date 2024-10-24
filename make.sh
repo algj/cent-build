@@ -16,7 +16,7 @@ echo "Configuring and compiling GNU Make..."
 make
 sudo make install
 
-make --version
+bash -c "make --version"
 
 cd ..
 rm -rf "make-${MAKE_VERSION}" ${MAKE_TAR}
